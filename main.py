@@ -1,8 +1,3 @@
-# This is a sample Python script.
-
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 # Note opencv uses BGR not RGB!
 
 import cv2 as cv
@@ -28,6 +23,7 @@ def draw_line_itemset(img):
         img.itemset((i,i,2), 0)
 
 def copy_can(img):
+    """Copies can image to top right corner"""
     can = img[0:150, 250:500]
     img[0:150, 0:250] = can
 
