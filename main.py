@@ -23,7 +23,7 @@ def draw_line_itemset(img):
         img.itemset((i,i,2), 0)
 
 def copy_can(img):
-    """Copies can image to top right corner"""
+    """Copies can image to top left corner"""
     can = img[0:150, 250:500]
     img[0:150, 0:250] = can
 
